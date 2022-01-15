@@ -130,6 +130,10 @@ body{
    width: 75%;
    margin-left: 55px;
 }
+body
+{
+  background: rgb(41, 1, 1); 
+}
 }
 @media (max-width: 820px) {
   .container{

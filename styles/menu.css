@@ -60,5 +60,8 @@ h1{
         height: 130vh;
         border-radius: none;
     }
+    body{
+        background: rgb(41, 1, 1); 
+    }
    
 }

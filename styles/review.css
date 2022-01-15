@@ -76,7 +76,28 @@ div.gallery {
       margin-left: 7rem;
       font-size: 1.5rem;
     }
-    .body{
-      background-image: linear-gradient(43deg, #444444 0%, #252525 46%, #000000 100%);
+    body{
+      background: rgb(41, 1, 1); 
     }
+    div.gallery img {
+      height :140px;
+      border-radius: 50px 50px 0px 0px;
+    }
+    div.gallery {
+      margin: 0px 5px 30px 80px;
+      border: 1px solid rgb(0, 0, 0);
+      float: left;
+      width: 60%;
+      height: auto; 
+      border-radius: 50px;
+  
+    } 
+    .head
+{
+    margin: 4.625rem;
+    margin-left:5.881rem;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+
   }

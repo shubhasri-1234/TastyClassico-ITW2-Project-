@@ -31,7 +31,7 @@ a.active
 }
 .wlc h2{
     text-align: center;
-    margin-top: 6.25rem;
+    margin-top: 4.25rem;
 }
 .wlc h4{
     text-align:justify;
@@ -116,32 +116,46 @@ body{
     background-color:rgb(17, 221, 17);
 }
 @media(max-width: 900px){
-    .navbar
-   {
-    width:25rem;
-    /* float:right; */
-    border:1px solid none;
-    margin-left: 1rem;
-    font-size: small;
-   }
-   .name{
-       margin-top: 1rem;
-    font-family: cursive;
-    font-size: 0.625rem;
-    margin-left: 0.625rem;
-}
-.wlc h1{
-    text-align: center;
-    margin-top: 0rem;
-    font-size: 1.563rem;
-} 
-.wlc
-{
+    body{
+         color: white;
+        background: rgb(41, 1, 1); 
    
-    background-color: black;
-    padding:3.438rem;
-    margin-top:3rem;
-    margin-left:0.563rem;
-    opacity: 0.84;
-}
+    }
+    .navbar
+    {
+     width:19rem;
+     border:1px solid none;
+     font-size: 0.7rem;
+    }
+    .navbar li{
+        width:4.875rem;
+        float: left;
+        margin:0.625rem 0.625rem;
+        text-align:center;
+    }
+    
+    .wlc
+    {
+        width:15.875rem;
+        height:30rem;
+        background-color: black;
+        padding:3.438rem;
+        margin-top:2.25rem;
+        margin-left:0.563rem;
+        opacity: 0.84;
+    }
+    .login{
+        margin-left: 0.1rem;
+        margin-top: 1.5rem;
+    }
+    .register{
+        margin-left: 3.5rem;
+        margin-top: 1.5rem;
+
+
+    }
+    .food{
+        margin-left: 3.25rem;
+        margin-top: 1rem;
+    }
 }

@@ -5,8 +5,11 @@
 }
 .head
 {
+   font-size: 1.5rem;
     margin: 0.625rem;
-    margin-left:29.781rem;
+    margin-left:31.5rem;
+    font-family:cursive;
+    color: aquamarine;
 }
 
 body{

@@ -7,7 +7,13 @@
 	<title>Food Menu</title>
 	<link rel="stylesheet" href="./styles/menu.css"/>
 </head>
-<body>
+<body onload="myfun()" onunload="myfunc()">
+	<script>
+		function myfun() {
+			var  my_time = new Date();
+			alert("Today's Date : "+my_time+". You can select an item in given menu and fill the online order form by logging in.");
+		}
+	</script>
 	<a class="hover" href="index.html">
 		<button class="back">Home</button>
 	  </a>
@@ -40,8 +46,10 @@
 					<h5>Prawns Tikka</h5>
 					<h5>Palak Murgh Tikka</h5>
 					<h5>Chicken BBQ Kabab</h5>
+					<hr>
 				</div>
 
 </body>
 </html>
+
 

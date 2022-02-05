@@ -4,42 +4,54 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Tasty Classico</title>
-    <link rel="stylesheet" href="./styles/index.css"/>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
-<body>
-    <header>
-            <div class="navbar">
-        <ul type="none">
-            <li><a class="active" herf="#">Home</a></li>
-            <li><a class="one" href="menu.html">Menu</a></li>
-            <li><a class="one" href="about.html">About</a></li>
-            <li><a class="one" href="form.html">Online Order</a></li>
-            <li><a class="one" href="review.html">Review</a></li>
-            <li><a class="one" href="contact.html">Contact</a></li>
-        </ul> 
-            </div>
-          
-        <h1 class="name"><i class="fa fa-home"></i>Tasty Classico</h1>
-       
-            <div class="wlc">
-                <h1>WELCOME!</h1>
+    
+    <body onload="myfun()" onunload="myfunc()">
+      
+
+      <nav>
+        <h1 class="name"><i class="fa fa-home"></i><span>T</span>asty <span>C</span>lassico</h1>
+        <div class="nav-links" id="navLinks">
+
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+              
+                <li><a class="active" href="index.html">HOME</a></li>
+                <li><a class="one" href="Menu.html">MENU</a></li>
+                <li><a class="one" href="about.html">ABOUT</a></li>
+                <li><a class="one" href="login.php">ORDER</a></li>
+                <li><a class="one" href="review.html">REVIEW</a></li>
+                <li><a class="one" href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+      <div class="wlc">
+                
+                <!-- <h1>WELCOME!</h1> -->
+                <h1 id="test1"></h1>
             
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</h4>
-                <h2>RESERVATION</h2>
-                <a href="Login.html">
+                <h4>Restaurants we prefer vary depending on our taste, culture, mood, previous experience and our first impression of the place.
+
+                 Our restaurant is an impression of calm and quietness as well as the quality of the food and it’s tasty taste.
+                  
+                 The restaurant offers delicious dining options, with Italian authentic flavor. Waiters in the restaurant are friendly and respectful.  </h4>
+                <div class="text-3"><span class="typing"></span></div>
+                <a href="login.php">
                 <button class="login">Login</button></a>
-                <a href="registration.html">
+                <a href="register.php">
                 <button class="register">Register</button></a>
                 <br><br>
                 <a href="food gallery.html">
-               <button class="food">Food Gallery</button></a>
-                
+               <button onclick="func()" class="food">Food Gallery</button></a>
             </div>
-            
-         </header>
 
+<script src="index.js"></script>
 
 </body>
 </html>

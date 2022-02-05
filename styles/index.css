@@ -3,20 +3,35 @@
     margin: 0px;
     padding: 0.063rem;
 }
+.wlc .text-3 span{
+    color: chartreuse;
+    font-weight: 500;
+    font-size: 0.9rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#test1
+{
+    color: chartreuse;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+    font-family: cursive;
+    font-size: 1.5rem;
+}
 .name{
     font-family: cursive;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     margin-left: 0.625rem;
+    margin-right: 200px;
 }
-a.active
-{
-    background-color: rgb(17, 221, 17);
-    padding:0.063rem 2.188rem 0.094rem 2.188rem;
+
+.name span{
+    font-size: 1.5rem;
+    color: chartreuse;
 }
 
 .wlc
 {
-    width:21.875rem;
+    width:22.875rem;
     height:30rem;
     background-color: black;
     padding:3.438rem;
@@ -26,19 +41,22 @@ a.active
 }
 .wlc h1{
     text-align: center;
-    margin-top: 1.875rem;
+    margin-top: 0.875rem;
     font-size: 1.563rem;
 }
 .wlc h2{
     text-align: center;
-    margin-top: 4.25rem;
+    margin-top: 1.25rem;
+    font-family: cursive;
 }
 .wlc h4{
     text-align:justify;
-    color:darkgray;
+    color:rgb(172, 166, 166);
     font-weight:normal;
     margin-top: 1.875rem;
-    letter-spacing:0.031rem;
+    margin-bottom:1.875rem ;
+    letter-spacing:0.01rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
 }
 body{
@@ -48,32 +66,75 @@ body{
     ), url(../images/homeimg.jpg)no-repeat;
     background-size:100% 100%;
 }
-.navbar
-{
-    width:46.875rem;
-    float:right;
-    border:1px solid none;
+
+
+nav{
+    display: flex;
+    padding: 1% 1%;
+    /* justify-content: space-between; */
+    align-items: center;
 }
-.navbar li{
-    width:6.875rem;
-    float: left;
-    margin:0.625rem auto;
-    text-align:center;
+
+.nav-links{
+    flex: 1;
+    text-align: right;
 }
-.navbar li a{
+.nav-links ul li{
+    display: inline-block;
+    padding: 8px 25px;
+}
+.nav-links ul li a{
+    color: #fff;
     text-decoration: none;
-    color:darkgrey;
+    font-size: 15px;
+    padding: 10px 10px 10px 10px;
 }
-.navbar li a.active{
-    text-decoration: none;
-    color:white;
+.nav-links ul li a.active{
+    background-color: rgb(17, 221, 17);
+    padding: 10px 10px 10px 10px;
 }
-.navbar li:hover{
+.nav-links li a.one:hover{
     background-color:rgb(17, 221, 17);
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 50px;
 }
-.navbar li a.one:hover {
-    color:white;
+.fa{
+    display:none;
 }
+
+@media(max-width: 700px){
+    .nav-links .fa{
+        display:initial;
+    }
+
+    .nav-links ul li{
+        
+        display: block;
+        margin-top: 10px;
+    }
+    .nav-links{
+        position: absolute;
+        background-color: #363535;
+        height: 100vh;
+        width: 200px;
+        top: 0px;
+        right: -200px;
+        text-align:left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .nav-links ul{
+        padding: 30px;
+    }
+}
+
 .login{
     background-color:rgb(99, 98, 98);
     color:white;
@@ -115,33 +176,24 @@ body{
 {
     background-color:rgb(17, 221, 17);
 }
-@media(max-width: 900px){
+@media(max-width:991px){
     body{
          color: white;
         background: rgb(41, 1, 1); 
    
     }
-    .navbar
-    {
-     width:19rem;
-     border:1px solid none;
-     font-size: 0.7rem;
+    .name{
+        font-size: 1.5rem;
+        margin-top: 0.65rem;
+        margin-left: 0.625rem;
     }
-    .navbar li{
-        width:4.875rem;
-        float: left;
-        margin:0.625rem 0.625rem;
-        text-align:center;
-    }
-    
-    .wlc
+   .wlc
     {
-        width:15.875rem;
+        width:cover;
         height:30rem;
         background-color: black;
         padding:3.438rem;
         margin-top:2.25rem;
-        margin-left:0.563rem;
         opacity: 0.84;
     }
     .login{
@@ -158,4 +210,11 @@ body{
         margin-left: 3.25rem;
         margin-top: 1rem;
     }
-}
+};
+
+
+
+
+
+
+

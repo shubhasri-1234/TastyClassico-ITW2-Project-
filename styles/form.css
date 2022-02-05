@@ -118,7 +118,9 @@
   width: 100%;
   padding: 8px 10px;
   font-size: 18px;
+  text-align: center;
   border: 0px;
+  text-decoration: none;
   background: black;
   color: #fff;
   cursor: pointer;
@@ -129,6 +131,7 @@
 .wrapper .form .inputfield .btn:hover{
   background: #42f60b;
 }
+
 
 .back{
   padding: 12px;

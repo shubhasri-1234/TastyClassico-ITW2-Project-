@@ -7,7 +7,12 @@
   <title>Food Gallery</title>
   <link rel="stylesheet" href="./styles/food_style.css"/>
 </head>
-<body>
+<body onload="myfun()" onunload="myfunc()">
+  <script>
+      function myfun() {
+          alert("Welcome to our Food Gallery");
+      }
+  </script>
   <a href="index.html">
     <button class="back">Home</button>
   </a>
